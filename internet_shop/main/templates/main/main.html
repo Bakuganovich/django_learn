@@ -1,0 +1,35 @@
+<Doctype>
+    <html>
+        <head>
+            <title>
+                {{title}}
+            </title>
+            <p>{{menu|join:" | "}}</p>
+            <hr>
+            <h1>{{title}}</h1>
+            <hr>
+
+        </head>
+
+        <body>
+
+            <ul>
+                    {% for product in products%}
+
+                    <li>
+                        <h2>{{product.name}}</h2>
+                        <p>{{product.description}}</p>
+                    </li>
+
+                    {% if not forloop.last %}
+                        <hr>
+                    {% endif%}
+
+                    {% endfor %}
+            </ul>
+
+
+        </body>
+
+    </html>
+</Doctype>
