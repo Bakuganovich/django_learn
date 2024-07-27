@@ -3,7 +3,12 @@ from .views import *
 
 urlpatterns = [
     path('', main, name='home'),
+    path('add_product/', add_product, name='add'),
     path('about/', about, name='about_us'),
-    path('<int:number_page>', main_page, name='home_page'),
-    path('clothes/<slug:name_clothes>/', search_clothes, name='name_clothes'),
+    path('sing_in/', sing_in, name='sing'),
+    path('post/<int:post_id>/', show_post, name='about_product'),
+    path('category/<int:cat_id>/', show_categories, name='category'),
+
 ]
+
+
