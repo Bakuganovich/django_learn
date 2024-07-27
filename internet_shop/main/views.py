@@ -1,7 +1,7 @@
 from django.http import HttpResponse, HttpResponseNotFound
 from django.shortcuts import redirect, render
 
-
+gg = []
 
 menu = [
     {'title':'Главная', 'url_name': 'home'},
